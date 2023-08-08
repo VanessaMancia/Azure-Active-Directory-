@@ -20,7 +20,8 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### Two network adapters were used to seperate traffic between external (NAT) and internal (VMWare Network)
 
-<img width="702" alt="Screenshot 2023-08-07 at 10 03 38 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/e4bad594-d73f-4ca4-b7d9-600b4cdf270e">
+<img width="728" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0634eed9-30af-4c83-8231-0965ddc250c4">
+
 
 
 
