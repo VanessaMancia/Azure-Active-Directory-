@@ -15,7 +15,18 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 #### This is what we will use to install the 2 operating systems on two seperate virtual machines
 ---
 
-### Now let's go to our virtual box and make the Server 2019 VM 
+## Windows Server 2019 Setup
+---
+
+#### Two network adapters were used to seperate traffic between external (NAT) and internal (VirtualBox Network)
+
+
+<img width="702" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/86acdaa0-41d3-4aeb-8ca9-b5007d97d276">
+
+
+
+
+
 
 
 
