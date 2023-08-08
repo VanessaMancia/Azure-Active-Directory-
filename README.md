@@ -34,6 +34,9 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ## Installing Active Directory Domain Services (ADDS) and creating a domain
 
+<img width="809" alt="Screenshot 2023-08-07 at 11 47 39 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/1197af47-92dc-40ea-98d7-ca63a42769ac">
+
+
 
 
 
