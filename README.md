@@ -18,16 +18,19 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 ## Windows Server 2019 Setup
 ---
 
-#### Two network adapters were used to seperate traffic between external (NAT) and internal (VirtualBox Network)
+#### Two network adapters were used to seperate traffic between external (NAT) and internal (VMWare Network)
+
+<img width="702" alt="Screenshot 2023-08-07 at 10 03 38 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/e4bad594-d73f-4ca4-b7d9-600b4cdf270e">
 
 
-<img width="702" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/86acdaa0-41d3-4aeb-8ca9-b5007d97d276">
 
----
 
-#### Now that we are in our Server 2019 we're going to change some settings
 
-<img width="696" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/5a53fc02-2c76-4ff8-a0d3-49ae23cac166">
+
+
+
+
+
 
 
 
