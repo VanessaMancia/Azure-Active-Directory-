@@ -22,6 +22,13 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 <img width="728" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0634eed9-30af-4c83-8231-0965ddc250c4">
 
+---
+
+Let's rename the PC 
+
+Right click on the menu and click "system" and press "rename this PC" 
+
+
 
 
 
