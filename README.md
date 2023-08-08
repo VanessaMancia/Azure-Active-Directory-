@@ -23,8 +23,11 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 <img width="702" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/86acdaa0-41d3-4aeb-8ca9-b5007d97d276">
 
+---
 
+#### Now that we are in our Server 2019 we're going to change some settings
 
+<img width="696" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/5a53fc02-2c76-4ff8-a0d3-49ae23cac166">
 
 
 
