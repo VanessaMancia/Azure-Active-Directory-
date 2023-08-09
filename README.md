@@ -76,6 +76,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 <img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a082b4b8-38f3-4100-b310-33858bb23357">
 
+
 ---
 
 ## Setting up a DHCP server on our domain controller 
@@ -85,6 +86,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 ### This will allow our windows 10 clients to get an IP address that will let them get on the internet and browse the internet although they're on this private internal network. 
 
 
+<img width="595" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/7c840ba7-f615-4dc5-839b-a6754460656f">
 
 
 
