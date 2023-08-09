@@ -50,6 +50,9 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### Let's create our own dedicated domain admin account 
 #### Click on Start > Admin Tools > Active Directory users and computers 
+#### Right click on mydomain.com > New > Organizational Unit and name it _ADMIN
+
+<img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/b3502b3b-63df-4a47-9854-39cdf19a3755">
 
 
 
