@@ -40,6 +40,10 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### Now we need to create the domain 
 
+#### Click on the yellow triangle and click "Promote this server to a domain controller" 
+
+<img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fd085d38-112d-4c21-9997-1c6746b504c9">
+
 
 
 
