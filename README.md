@@ -72,6 +72,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ### When we create our Windows 10 client it's going to allow this client to be on a private virtual network, but still be able to access the internet through the domain controller. 
 
+<img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0712e468-7a16-458e-a2dc-e58795eb5d16">
 
 
 
