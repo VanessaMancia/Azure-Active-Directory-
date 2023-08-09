@@ -64,8 +64,13 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### Right click the user > Properties > Member of > Add > type Domain Admin > Apply > Sign out
 
+---
 
+## Installing RAS (Remote Access Server) and NAT (Network Address Translation)
 
+---
+
+### When we create our Windows 10 client it's going to allow this client to be on a private virtual network, but still be able to access the internet through the domain controller. 
 
 
 
