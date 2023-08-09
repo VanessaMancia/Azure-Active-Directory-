@@ -48,8 +48,8 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ---
 
-### Let's create our own dedicated domain admin account 
-### Click on Start > Admin Tools > Active Directory users and computers 
+#### Let's create our own dedicated domain admin account 
+#### Click on Start > Admin Tools > Active Directory users and computers 
 
 
 
