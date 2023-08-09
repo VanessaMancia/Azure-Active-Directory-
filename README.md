@@ -54,6 +54,13 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 <img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/b3502b3b-63df-4a47-9854-39cdf19a3755">
 
+#### Now that we have our new folder, we will create a new user 
+
+#### Right click _ADMIN > New > User
+
+<img width="425" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/ff39a745-f8cf-4756-b883-8143400b6a6d">
+
+#### We have created our first user and now we will make it a domain admin 
 
 
 
