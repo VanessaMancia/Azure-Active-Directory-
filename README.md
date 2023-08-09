@@ -62,7 +62,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### We have created our first user and now we will make it a domain admin 
 
-
+#### Right click the user > Properties > Member of > Add > type domain admin 
 
 
 
