@@ -66,7 +66,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ---
 
-## Installing RAS (Remote Access Server) and NAT (Network Address Translation)
+## Installing RAS (Remote Access Server) and NAT (Network Address Translation) on our domain controller 
 
 ---
 
