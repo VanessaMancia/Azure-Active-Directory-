@@ -72,7 +72,13 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ### When we create our Windows 10 client it's going to allow this client to be on a private virtual network, but still be able to access the internet through the domain controller. 
 
+#### Go back to the domain controller and click "Add roles and features" > next > remote access > routing > next > Install
+
+#### Go to tools > routing and remote access > DC (local) and click "Configure and enable..."
+
 <img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0712e468-7a16-458e-a2dc-e58795eb5d16">
+
+#### Once you get to configuration click "NAT" it will give us 2 options and click on the one we named "internet" and it should now be configured
 
 <img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a082b4b8-38f3-4100-b310-33858bb23357">
 
@@ -83,10 +89,16 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ---
 
-### This will allow our windows 10 clients to get an IP address that will let them get on the internet and browse the internet although they're on this private internal network. 
+### DHCP allows our windows 10 clients to get an IP address automatically which will let them get on the internet and browse the internet although they're on this private internal network. 
+---
 
+#### Go to the domain controller and click on "add roles," go to the server roles tab and click "DHCP Server" > "add features" > next > Install
+
+#### Go to tools > DHCP > right click IPv4 > new scope > next 
 
 <img width="595" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/7c840ba7-f615-4dc5-839b-a6754460656f">
+
+---
 
 
 
