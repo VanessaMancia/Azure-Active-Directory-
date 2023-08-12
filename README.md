@@ -2,7 +2,7 @@
 ---
 ### Introduction 
 ---
-For this project, Oracle VirtualBox was utilized to create an integrated enviornment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was deployed to populate approximately 1,000 users. Windows 10 Pro VM was integrated into AD to create a centralized management system for user accounts, computers, and other network resources. 
+#### For this project, Oracle VirtualBox was utilized to create an integrated enviornment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was deployed to populate approximately 1,000 users. Windows 10 Pro VM was integrated into AD to create a centralized management system for user accounts, computers, and other network resources. 
 
 <img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/c5aa082c-1bc8-4199-9c21-b9c73401ff64">
 
