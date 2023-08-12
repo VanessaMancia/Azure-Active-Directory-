@@ -114,6 +114,8 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 <img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fcce7b79-80c0-48fe-97bb-61c0dcbc775e">
 
+---
+
 
 
 
