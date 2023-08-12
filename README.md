@@ -119,11 +119,15 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 ## Creating Powershell script to create users
 
 ---
-### Go to the start menu > Windows PowerShell ISE > more > run as admin 
+#### Go to the start menu > Windows PowerShell ISE > more > run as admin 
 
 <img width="691" alt="Screenshot 2023-08-11 at 8 39 36 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/5a2a3f3a-bd29-41f5-8378-eedc1a0aff30">
 
+#### We are deploying our PowerShell script to create our users 
 
+<img width="691" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/4d124ab3-867d-4185-ae35-715c02d9b7b9">
+
+#### 
 
 ## Creating our client computer and joining it to the domain 
 
