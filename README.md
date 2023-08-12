@@ -99,7 +99,14 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 #### Go to tools > DHCP > right click IPv4 > new scope > next 
 
-<img width="595" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/7c840ba7-f615-4dc5-839b-a6754460656f">
+<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/df28b531-697a-44f5-abc4-25d5866d3387">
+
+#### For the name we will put the IP range (172.16.0.100-200)
+---
+
+#### For IP address range insert this 
+
+<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/84d4a947-5d9d-4bb3-9fd8-7f1ff4fecbcb">
 
 ---
 
