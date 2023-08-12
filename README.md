@@ -125,7 +125,8 @@
 
 #### We are deploying our PowerShell script to create our users 
 
-<img width="691" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/4d124ab3-867d-4185-ae35-715c02d9b7b9">
+<img width="640" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a8cf2183-f846-462a-ae1a-5e082c7b47b5">
+
 
 #### 
 
