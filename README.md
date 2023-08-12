@@ -127,6 +127,9 @@
 
 <img width="640" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a8cf2183-f846-462a-ae1a-5e082c7b47b5">
 
+#### We can see how our users are generating 
+
+<img width="640" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fb600808-7e33-42e1-9816-c416ca7961e5">
 
 #### 
 
