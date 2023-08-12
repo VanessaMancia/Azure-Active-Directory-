@@ -116,6 +116,10 @@ For this project, Oracle VirtualBox was utilized to create an integrated enviorn
 
 ---
 
+## Creating our client computer and joining it to the domain 
+
+---
+
 
 
 
