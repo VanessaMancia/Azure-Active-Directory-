@@ -13,7 +13,7 @@
 
 ---
 
-### Download [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [erver 2019](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
+### Download [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [Server 2019](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
 
 #### This is what we will use to install the 2 operating systems on two seperate virtual machines
 ---
