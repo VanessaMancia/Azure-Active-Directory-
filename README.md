@@ -33,6 +33,7 @@
 
 <img width="462" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/3d411bd4-0ee1-424a-a28a-27e38011d429">
 
+---
 
 #### Let's rename the PC 
 
