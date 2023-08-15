@@ -102,7 +102,7 @@
 
 ---
 
-### DHCP allows our windows 10 clients to get an IP address automatically which will let them get on the internet and browse the internet although they're on this private internal network. 
+#### DHCP will allow our client computer on the network to automatically get their IP address 
 ---
 
 #### Go to the domain controller and click on "add roles," go to the server roles tab and click "DHCP Server" > "add features" > next > Install
