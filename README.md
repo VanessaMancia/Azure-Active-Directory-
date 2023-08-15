@@ -27,6 +27,13 @@
 
 ---
 
+#### We're going to assign an IP address to our internal network
+
+#### Right click > Properties > Internet Protocol Version 4 (TCP/IPv4) > Use the following IP address
+
+<img width="462" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/3d411bd4-0ee1-424a-a28a-27e38011d429">
+
+
 #### Let's rename the PC 
 
 #### Right click on the menu and click "system" and press "rename this PC" and restart the VM 
