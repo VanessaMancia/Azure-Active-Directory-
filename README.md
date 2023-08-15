@@ -83,7 +83,7 @@
 
 ---
 
-### When we create our Windows 10 client it's going to allow this client to be on a private virtual network, but still be able to access the internet through the domain controller. 
+### We're going to configure routing so that clients on the private network can access the internet through the domain controller  
 
 #### Go back to the domain controller and click "Add roles and features" > next > remote access > routing > next > Install
 
