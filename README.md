@@ -139,6 +139,7 @@
 
 #### Let's create a new virtual machine named "Client 1" and install Windows 10 on it. 
 
+<img width="425" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/66674a9e-cf16-4f27-83c9-18d7bfa5f19b">
 
 
 
