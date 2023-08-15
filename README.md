@@ -137,6 +137,8 @@
 
 ---
 
+#### Let's create a new virtual machine named "Client 1" and install Windows 10 on it. 
+
 
 
 
