@@ -50,9 +50,11 @@
 
 <img width="809" alt="Screenshot 2023-08-07 at 11 47 39 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/1197af47-92dc-40ea-98d7-ca63a42769ac">
 
-#### Now we need to create the domain 
+#### We installed the software for Active Directory Domain Services, but we didn't actually create the domain yet. 
 
-#### Click on the yellow triangle and click "Promote this server to a domain controller" 
+#### To create the domain we need to follow the following steps: 
+
+#### Click on the yellow triangle and click "Promote this server to a domain controller" > click "add new forest" > name the domain whatever you want > install 
 
 <img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fd085d38-112d-4c21-9997-1c6746b504c9">
 
