@@ -153,6 +153,9 @@
 
 ---
 
+#### We used ipconfig to display the current configuration of TCP/IP and ping to check connectivity 
+
+<img width="520" alt="Screenshot 2023-08-15 at 10 41 46 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a0aa9a41-11d1-4ee6-8f05-8b5b63dbbc0a">
 
 
 
