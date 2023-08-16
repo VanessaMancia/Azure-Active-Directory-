@@ -157,6 +157,14 @@
 
 <img width="520" alt="Screenshot 2023-08-15 at 10 41 46 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a0aa9a41-11d1-4ee6-8f05-8b5b63dbbc0a">
 
+---
+
+#### We're going to change the name of our host 
+
+#### Right click the start menu > system > Rename this PC (advanced) so we can join the domain at the same time
+
+---
+
 
 
 
