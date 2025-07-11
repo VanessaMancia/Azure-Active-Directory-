@@ -1,182 +1,138 @@
-## Integrated Active Directory Enviornment in VirtualBox 
----
-### Introduction 
----
-#### For this project, Oracle VirtualBox was utilized to create an integrated enviornment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was deployed to populate approximately 1,000 users. Windows 10 Pro VM was integrated into AD to create a centralized management system for user accounts, computers, and other network resources. 
+# 🖥️ Integrated Active Directory Environment in VirtualBox
 
-<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/c5aa082c-1bc8-4199-9c21-b9c73401ff64">
+## 🔎 Introduction
 
----
+In this project, Oracle VirtualBox was used to create an integrated environment consisting of:
 
-### Download [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-#### This is where we will run our VMs 
+- A **Windows Server 2019** VM acting as a **Domain Controller** with Active Directory (AD) services.
+- A **Windows 10 Pro** VM joined to the domain.
+- A custom **PowerShell script** was deployed to generate ~1,000 users in AD.
 
----
+This lab demonstrates centralized management of user accounts, computers, and network resources.
 
-### Download [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [Server 2019](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
-
-#### This is what we will use to install the 2 operating systems on two seperate virtual machines
----
-
-## Windows Server 2019 Setup
----
-
-#### Two network adapters were used to seperate traffic between external (NAT) and internal (VMWare Network)
-
-<img width="728" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0634eed9-30af-4c83-8231-0965ddc250c4">
+<img width="1066" alt="AD Overview" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/c5aa082c-1bc8-4199-9c21-b9c73401ff64">
 
 ---
 
-#### We're going to assign an IP address to our internal network
+## 🔧 Prerequisites
 
-#### Right click > Properties > Internet Protocol Version 4 (TCP/IPv4) > Use the following IP address
-
-<img width="462" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/3d411bd4-0ee1-424a-a28a-27e38011d429">
-
----
-
-#### Let's rename the PC 
-
-#### Right click on the menu and click "system" and press "rename this PC" and restart the VM 
-
-<img width="728" alt="Screenshot 2023-08-07 at 11 30 36 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/9266a995-6e73-454e-a8af-eff0e11e1793">
+- [Download Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) – where we’ll run the VMs  
+- [Download Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)  
+- [Download Windows Server 2019 ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)  
 
 ---
 
-## Installing Active Directory Domain Services (ADDS) and creating a domain
+## ⚙️ Windows Server 2019 Setup
+
+### Configure Network Adapters (NAT + Internal)
+
+Two adapters are used:
+- NAT for internet access  
+- Internal for communication with client VM  
+
+<img width="728" alt="NICs" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0634eed9-30af-4c83-8231-0965ddc250c4">
+
+### Assign Static IP
+
+Go to:
+`Network Connections > Properties > IPv4 > Use the following IP address`
+
+<img width="462" alt="IP Setup" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/3d411bd4-0ee1-424a-a28a-27e38011d429">
+
+### Rename the Server
+
+Go to:
+`Start > System > Rename this PC` and reboot
+
+<img width="728" alt="Rename PC" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/9266a995-6e73-454e-a8af-eff0e11e1793">
 
 ---
 
-#### We're installing the software for Active Directory Domain Services
+## 🏢 Install Active Directory Domain Services (ADDS)
 
-<img width="809" alt="Screenshot 2023-08-07 at 11 47 39 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/1197af47-92dc-40ea-98d7-ca63a42769ac">
+1. Add the ADDS role from Server Manager  
+2. Click yellow triangle → `Promote this server to a domain controller`  
+3. Create new forest (e.g., `mydomain.com`)  
 
-#### We installed the software for Active Directory Domain Services, but we didn't actually create the domain yet. 
-
-#### To create the domain we need to follow the following steps: 
-
-#### Click on the yellow triangle and click "Promote this server to a domain controller" > click "add new forest" > name the domain whatever you want > install 
-
-<img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fd085d38-112d-4c21-9997-1c6746b504c9">
+<img width="809" alt="Install AD" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/1197af47-92dc-40ea-98d7-ca63a42769ac">
+<img width="809" alt="Promote Server" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fd085d38-112d-4c21-9997-1c6746b504c9">
 
 ---
 
-#### Let's create our own dedicated domain admin account 
-#### Click on Start > Admin Tools > Active Directory users and computers 
-#### Right click on mydomain.com > New > Organizational Unit and name it _ADMIN
+## 👩‍💼 Create Domain Admin Account
 
-<img width="809" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/b3502b3b-63df-4a47-9854-39cdf19a3755">
+1. Go to `Start > Administrative Tools > Active Directory Users and Computers`  
+2. Create Organizational Unit: `_ADMIN`  
+3. Inside `_ADMIN`, create new user  
+4. Add user to **Domain Admins** group
 
-#### Now that we have our new folder, we will create a new user 
-
-#### Right click _ADMIN > New > User
-
-<img width="425" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/ff39a745-f8cf-4756-b883-8143400b6a6d">
-
-#### We have created our first user and now we will make it a domain admin 
-
-#### Right click the user > Properties > Member of > Add > type Domain Admin > Apply > Sign out
+<img width="809" alt="Create OU" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/b3502b3b-63df-4a47-9854-39cdf19a3755">
+<img width="425" alt="Create User" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/ff39a745-f8cf-4756-b883-8143400b6a6d">
 
 ---
 
-## Installing RAS (Remote Access Server) and NAT (Network Address Translation) on our domain controller 
+## 🌐 Configure RAS (Remote Access Server) + NAT
+
+To allow internet access for internal clients:
+
+1. Add Remote Access + Routing roles  
+2. Open `Routing and Remote Access` > Configure > Choose `NAT`  
+3. Select external NIC (named “Internet”)
+
+<img width="547" alt="RAS NAT" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0712e468-7a16-458e-a2dc-e58795eb5d16">
+<img width="547" alt="NAT Setup" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a082b4b8-38f3-4100-b310-33858bb23357">
 
 ---
 
-### We're going to configure routing so that clients on the private network can access the internet through the domain controller  
+## 📡 Setup DHCP Server on Domain Controller
 
-#### Go back to the domain controller and click "Add roles and features" > next > remote access > routing > next > Install
+1. Add DHCP Server role  
+2. Go to `Tools > DHCP`  
+3. Right-click IPv4 > New Scope  
+4. Scope Name: `172.16.0.100 – 172.16.0.200`
 
-#### Go to tools > routing and remote access > DC (local) and click "Configure and enable..."
-
-<img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/0712e468-7a16-458e-a2dc-e58795eb5d16">
-
-#### Once you get to configuration click "NAT" it will give us 2 options and click on the one we named "internet" and it should now be configured
-
-<img width="547" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a082b4b8-38f3-4100-b310-33858bb23357">
-
+<img width="1066" alt="DHCP 1" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/df28b531-697a-44f5-abc4-25d5866d3387">
+<img width="1066" alt="DHCP 2" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/84d4a947-5d9d-4bb3-9fd8-7f1ff4fecbcb">
+<img width="1066" alt="DHCP Gateway" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fcce7b79-80c0-48fe-97bb-61c0dcbc775e">
 
 ---
 
-## Setting up a DHCP server on our domain controller 
+## ⚡ Automate User Creation with PowerShell
+
+1. Open `PowerShell ISE as Administrator`  
+2. Run custom script to auto-generate users
+
+<img width="691" alt="ISE" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/5a2a3f3a-bd29-41f5-8378-eedc1a0aff30">
+<img width="640" alt="Script Execution" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a8cf2183-f846-462a-ae1a-5e082c7b47b5">
+<img width="640" alt="Users Created" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fb600808-7e33-42e1-9816-c416ca7961e5">
 
 ---
 
-#### DHCP will allow our client computer on the network to automatically get their IP address 
----
+## 🧑‍💻 Set Up Client VM + Join Domain
 
-#### Go to the domain controller and click on "add roles," go to the server roles tab and click "DHCP Server" > "add features" > next > Install
+1. Create **Windows 10** VM  
+2. Set **internal network adapter** to match domain controller  
+3. Boot and run `ipconfig` to verify DHCP lease  
+4. Rename PC > Join domain
 
-#### Go to tools > DHCP > right click IPv4 > new scope > next 
-
-<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/df28b531-697a-44f5-abc4-25d5866d3387">
-
-#### For the name we will put the IP range (172.16.0.100-200)
----
-
-#### For IP address range insert this 
-
-<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/84d4a947-5d9d-4bb3-9fd8-7f1ff4fecbcb">
+<img width="425" alt="Client NIC" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/66674a9e-cf16-4f27-83c9-18d7bfa5f19b">
+<img width="520" alt="Ping Test" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a0aa9a41-11d1-4ee6-8f05-8b5b63dbbc0a">
 
 ---
 
-#### This is the domain controllers IP address that has NAT configured on it 
+## ✅ Summary
 
-<img width="1066" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fcce7b79-80c0-48fe-97bb-61c0dcbc775e">
+You have successfully created a fully functional Active Directory environment in **VirtualBox** including:
 
----
+- A Windows Server 2019 Domain Controller  
+- DHCP and NAT for internal client routing  
+- Bulk user creation using PowerShell  
+- Windows 10 client VM joined to the domain
 
-## Creating Powershell script to create users
-
----
-#### Go to the start menu > Windows PowerShell ISE > more > run as admin 
-
-<img width="691" alt="Screenshot 2023-08-11 at 8 39 36 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/5a2a3f3a-bd29-41f5-8378-eedc1a0aff30">
-
-#### We are deploying our PowerShell script to create our users 
-
-<img width="640" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a8cf2183-f846-462a-ae1a-5e082c7b47b5">
-
-#### We can see how our users are generating 
-
-<img width="640" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/fb600808-7e33-42e1-9816-c416ca7961e5">
-
-#### 
-
-## Creating our client computer and joining it to the domain 
+This simulates a real-world small office AD infrastructure — perfect for labs, red/blue team practice, or portfolio building!
 
 ---
 
-#### We're going to create a Windows 10 client and configure it to use an internal network, so we can get a DHCP address from the Domain controller. 
-
-<img width="425" alt="image" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/66674a9e-cf16-4f27-83c9-18d7bfa5f19b">
-
----
-
-#### We used ipconfig to display the current configuration of TCP/IP and ping to check connectivity 
-
-<img width="520" alt="Screenshot 2023-08-15 at 10 41 46 PM" src="https://github.com/VanessaMancia/Azure-Active-Directory-/assets/112146207/a0aa9a41-11d1-4ee6-8f05-8b5b63dbbc0a">
-
----
-
-#### We're going to change the name of our host 
-
-#### Right click the start menu > system > Rename this PC (advanced) so we can join the domain at the same time
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+👩‍💻 **Created by:** Vanessa Mancia  
+📅 **Date:** July 2025  
+🔗 [LinkedIn](https://www.linkedin.com/in/vanessamancia)
